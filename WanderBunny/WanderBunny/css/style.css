@@ -1,0 +1,119 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  background: #e2fff8;
+  color: #333;
+  margin: 0;
+}
+
+/* Navigation */
+.nav_links li a {
+  text-decoration: none;
+  color: #006d6f;
+  font-weight: 500;
+}
+.nav_links li a:hover {
+  color: #00a8a8;
+}
+.nav_links{
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Buttons */
+.login_btn {
+  background-color: #8df8e6;
+  border: none;
+  color: #004d4f;
+}
+.login_btn:hover {
+  background-color: #77e0cf;
+}
+
+/* Search Box */
+.search_box {
+  border: 1px solid #b6f5e8;
+}
+
+/* Stay Card Hover Float Animation */
+.stay_card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+.stay_card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 18px 30px rgba(0, 128, 119, 0.15);
+}
+
+/* Images */
+.stay_img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  border-radius: 18px 18px 0 0;
+}
+
+@media (min-width: 1200px) {
+    .search_box {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Adjust the login button text color on small screens for better visibility if needed */
+    .login_btn {
+      font-size: 0.9rem; 
+    }
+  }
+
+.loginForm{
+  font-size: 0.9rem;
+}
+
+.loginForm .form-control{
+  border-radius: 12px;
+  border:1px #b6f5e8;
+}
+
+.loginForm button{
+  background-color: #8df8e6;
+  border: none;
+  color: #004d4f;
+  font-weight: 600;
+}
+
+.loginForm button:hover{
+  background-color: #77e0cf;
+}
+
+.pop-overlay{
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #b6f5e8;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.popup-content {
+  background: #b6f5e8;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.rating-lg{
+  font-size: 1.15rem;
+  padding: 0.5em 0.7em;
+  border-radius: 0.05rem;
+  color:#006d6f;
+}
+
+:root {
+    --wb-teal-600: #006d6f;
+}
+
+.text-teal-600 {
+    color: var(--wb-teal-600) 
+}
